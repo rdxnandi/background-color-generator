@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Color Generator</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="color-box"></div>
+      <div class="color-right-box">
+        <!-- Hex Color -->
+        <div class="hex-color-box">
+          <input type="text" value="#000000" id="outputHex" />
+          <!-- <p></p> -->
+          <button id="copyHex" data-target="outputHex">Copy</button>
+        </div>
+
+        <!-- HSL Color -->
+        <div class="HSL-color-box">
+          <input type="text" value="hsl(0, 0%, 0%)" id="outputHSL" />
+          <button id="copyHSL" data-target="outputHSL">Copy</button>
+        </div>
+
+        <!-- RGB Color -->
+        <div class="RGB-color-box">
+          <input type="text" value="rgb(255, 255, 255)" id="outputRGB" />
+          <button id="copyRGB" data-target="outputRGB">Copy</button>
+        </div>
+        <button id="change">Change</button>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
